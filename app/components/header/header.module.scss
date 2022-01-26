@@ -1,0 +1,55 @@
+@import "styles/variables";
+
+.header{
+  background-color: $white;
+  position: sticky;
+  top:0;
+  z-index: 1;
+  box-shadow: $shadow1;
+  margin-bottom: 20px;
+
+  &__wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1230px;
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  &__block{
+    display: flex;
+    position: relative;
+  }
+  &__logo{
+    display: flex;
+    align-items: center;
+    color: $primary;
+    margin-right: 50px;
+    @extend %title-very-big;
+
+  }
+  &__nav{
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__navItem{
+    a{
+      @extend %title_middle;
+      display: block;
+      padding: 0 15px;
+      color: $black;
+      &:hover{
+        color: $primary;
+        background-color: $secondary;
+        border-bottom: 1px solid $primary;
+      }
+    }
+  }
+  &__user{
+    justify-content: space-between;
+  }
+}
+.avatar{
+  margin: 0 5px;
+}

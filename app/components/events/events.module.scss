@@ -1,0 +1,16 @@
+@import "styles/variables";
+.event{
+  height: 330px;
+  padding: 10px 0;
+  overflow: auto;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  &__tag{
+    @extend %text_mini;
+    color: $primary;
+    margin: 0 10px;
+    background-color: $secondary;
+  }
+}

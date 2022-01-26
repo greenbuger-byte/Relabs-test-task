@@ -1,0 +1,12 @@
+@import "/styles/variables";
+
+.footer{
+  background-color: $primary;
+  margin-top: 10px;
+  &__wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1230px;
+    color: $white;
+  }
+}

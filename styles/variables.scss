@@ -1,0 +1,48 @@
+$primary: #cb11ab;
+$secondary: #fff3f6;
+$gray: #ccc;
+$gray2: #ececec;
+$gray3: #989898;
+$white: #fff;
+$black: #000;
+
+// SHADOW
+$shadow1: -1px -1px 36px -3px rgba(34, 60, 80, 0.16);
+$shadow2: 4px 4px 62px 0px rgba(34, 60, 80, 0.2);
+
+// RADIUS
+$radius1: 8px;
+$radius2: 15px;
+
+// GRADIENT
+$gradient: linear-gradient(80deg, #89feff 0%, #fdbb2d 100%);
+
+@mixin fontLayout($size, $weight){
+  font-size: $size;
+  font-weight: $weight;
+}
+
+%text_mini{
+  @include fontLayout(12px, 400);
+}
+%title-very-big{
+  @include fontLayout(25px, 800);
+}
+%title_big{
+  @include fontLayout(16px, 700);
+}
+%title_middle{
+  @include fontLayout(14px, 700);
+}
+%text-middle{
+  @include fontLayout(11px, 400);
+}
+%text_big{
+  @include fontLayout(12px, 400);
+}
+%text-small{
+  @include fontLayout(10px, 300);
+}
+%text-small-bold{
+  @include fontLayout(10px, 600);
+}

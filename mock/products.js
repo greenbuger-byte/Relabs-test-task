@@ -1,0 +1,66 @@
+export function getProducts () { return new Promise( (resolve) => {
+    setTimeout(() => {
+        resolve([
+            {
+                id:'1',
+                images: ['https://cdn1.ozone.ru/s3/multimedia-s/wc200/6048736972.jpg'],
+                title: 'Смартфон Samsung Galaxy A32 4/128GB, фиолетовый',
+                price: 19980,
+                oldPrice: 21980,
+                cardPrice: 18200,
+                rating: { mark: 2, total: 64 },
+                sale: '-15%',
+            },
+            {
+                id: '2',
+                images: ['https://cdn1.ozone.ru/s3/multimedia-c/wc200/6036412860.jpg'],
+                title: 'Смартфон Poco X3 Pro 8/256GB, синий',
+                price: 19980,
+                oldPrice: 21980,
+                cardPrice: 18200,
+                rating: { mark: 4, total: 63 },
+                sale: '-5%',
+            },
+            {
+                id: '3',
+                images: ['https://cdn1.ozone.ru/s3/multimedia-e/wc200/6051725246.jpg'],
+                title: 'Смартфон Samsung Galaxy S21 8/128GB, белый',
+                price: 20246,
+                oldPrice: 23246,
+                cardPrice: 21200,
+                rating: { mark: 5, total: 33 },
+                sale: '-13%',
+            },
+            {
+                id: '4',
+                images: ['https://cdn1.ozone.ru/s3/multimedia-1/wc200/6051212845.jpg'],
+                title: 'Смартфон Apple iPhone XS Max 64GB, серый космос',
+                price: 60000,
+                oldPrice: 53450,
+                cardPrice: 54600,
+                rating: { mark: 5, total: 313 },
+                sale: '-10%',
+            },
+            {
+                id: '5',
+                images: ['https://cdn1.ozone.ru/s3/multimedia-h/wc200/6142194329.jpg'],
+                title: 'Смартфон Samsung Galaxy S20 FE 6/128GB, зеленый',
+                price: 40499,
+                oldPrice: 42499,
+                cardPrice: 42499,
+                rating: { mark: 5, total: 33 },
+                sale: '-13%',
+            },
+            {
+                id: '6',
+                images: ['https://cdn1.ozone.ru/s3/multimedia-u/wc200/6088298058.jpg'],
+                title: 'Смартфон Poco F3 6/128GB, синий',
+                price: 29240,
+                oldPrice: 30200,
+                cardPrice: 29300,
+                rating: { mark: 2, total: 24 },
+                sale: '-5%',
+            },
+        ])
+    })
+})}

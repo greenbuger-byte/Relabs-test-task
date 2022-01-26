@@ -1,0 +1,17 @@
+@import "styles/variables";
+.login{
+  width: 360px;
+  margin: auto;
+  border-radius: $radius2;
+  text-align: center;
+  box-shadow: $shadow1;
+  &__icon{
+    color: $gray;
+    border: 1px solid $gray;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+  }
+}
